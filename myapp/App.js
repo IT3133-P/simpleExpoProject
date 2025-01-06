@@ -16,8 +16,8 @@ export default function App() {
     <PaperProvider>
       <SafeAreaProvider>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName='home' screenOptions={{ headerTitleAlign: 'center' }}>
-            <Stack.Screen name='home' component={Home} options={{ title: 'Home Screen' }} />
+          <Stack.Navigator initialRouteName='home' screenOptions={{ headerTitleAlign: 'center'}}>
+            <Stack.Screen name='home' component={Home} options={{ title: 'Home Screen'}} />
             <Stack.Screen name='course' component={Course} options={{ title: 'Course Screen' }} />
             <Stack.Screen name='subject' component={Subject} options={{ title: 'Subject Screen' }} />
             <Stack.Screen name='profile' component={Profile} options={{ title: 'Profile Screen' }} />
@@ -26,6 +26,7 @@ export default function App() {
       </SafeAreaProvider>
     </PaperProvider>
   )
+
 }
 
 const styles = StyleSheet.create({
@@ -34,5 +35,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });

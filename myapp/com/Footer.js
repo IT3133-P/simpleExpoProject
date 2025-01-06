@@ -2,7 +2,9 @@ import { StyleSheet, View } from "react-native";
 import { Text, Button } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
-export default function Footer() {
+export default function Footer({ valueSending }) {
+
+    const paramSending = valueSending
 
     const navigation = useNavigation()
 
@@ -12,9 +14,9 @@ export default function Footer() {
 
     return(
         <View style={styles.container}>
-            <Button style={styles.button} onPress={() => navigation.navigate('profile')}>Profile</Button>
-            <Button style={styles.button} onPress={() => navigation.navigate('course')}>COurse</Button>
-            <Button style={styles.button} onPress={() => navigation.navigate('subject')}>Subject</Button>
+            <Button style={styles.button} onPress={() => navigation.navigate('profile', paramSending)}>Profile</Button>
+            <Button style={styles.button} onPress={() => navigation.navigate('course', paramSending)}>COurse</Button>
+            <Button style={styles.button} onPress={() => navigation.navigate('subject', paramSending)}>Subject</Button>
         </View>
     )
 }

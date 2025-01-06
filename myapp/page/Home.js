@@ -11,10 +11,10 @@ export default function Home() {
                 <Header/>
             </View>
             <View style={styles.box2}>
-                <Text>Hi</Text>
+                <Text style={styles.text}>Wellcome to my Application</Text>
             </View>
             <View style={styles.box3}>
-                <Footer/>
+                <Footer valueSending={'My name is Minindu'}/>
             </View>
         </>
     )
@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
     },
     box1: {
         flex: 1,
@@ -35,12 +34,17 @@ const styles = StyleSheet.create({
     box2: {
         flex: 4,
         backgroundColor: 'red',
-        width:'100%'
+        width:'100%',
+        justifyContent: 'center',
+
     },
     box3: {
         flex: 1,
         backgroundColor: 'blue',
         width:'100%'
+    },
+    text:{
+        textAlign:'center'
     }
 })
 

@@ -3,7 +3,9 @@ import { StyleSheet, View } from "react-native";
 import Header from "../com/Header";
 import Footer from "../com/Footer";
 
-export default function Profile() {
+export default function Profile({ route }) {
+
+    const getParamValues = route.params
 
     return (
         <>
@@ -11,10 +13,10 @@ export default function Profile() {
                 <Header/>
             </View>
             <View style={styles.box2}>
-                <Text>Profile</Text>
+                <Text>{getParamValues}</Text>
             </View>
             <View style={styles.box3}>
-                <Footer/>
+                <Footer valueSending={getParamValues}/>
             </View>
         </>
     )
@@ -25,7 +27,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
     },
     box1: {
         flex: 1,
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
     box2: {
         flex: 4,
         backgroundColor: 'white',
-        width:'100%'
+        width:'100%',
+        justifyContent: 'center',
     },
     box3: {
         flex: 1,
