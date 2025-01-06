@@ -2,7 +2,7 @@ import { StyleSheet, View } from "react-native";
 import { Text, Button } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
-export default function Footer({ valueSending }) {
+export default function Footer({ valueSending }) {// get value that comming from tha all page
 
     const paramSending = valueSending
 
