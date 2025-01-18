@@ -14,7 +14,7 @@ export default function Home() {
                 <Text style={styles.text}>Wellcome to my Application</Text>
             </View>
             <View style={styles.box3}>
-                <Footer valueSending={'My name is Minindu'}/>
+                <Footer valueSending={'My name is Minindu'}/> {/*value will be sent to the Footer component as function parameters*/}
             </View>
         </>
     )

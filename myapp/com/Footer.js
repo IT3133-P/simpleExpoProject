@@ -14,9 +14,9 @@ export default function Footer({ valueSending }) {// get value that comming from
 
     return(
         <View style={styles.container}>
-            <Button style={styles.button} onPress={() => navigation.navigate('profile', paramSending)}>Profile</Button>
-            <Button style={styles.button} onPress={() => navigation.navigate('course', paramSending)}>COurse</Button>
-            <Button style={styles.button} onPress={() => navigation.navigate('subject', paramSending)}>Subject</Button>
+            <Button style={styles.button} onPress={() => navigation.navigate('profile', paramSending)}>Profile</Button> {/*value will be sent to the component as route params*/}
+            <Button style={styles.button} onPress={() => navigation.navigate('course', paramSending)}>COurse</Button> {/*value will be sent to the component as route params*/}
+            <Button style={styles.button} onPress={() => navigation.navigate('subject', paramSending)}>Subject</Button> {/*value will be sent to the component as route params*/}
         </View>
     )
 }
